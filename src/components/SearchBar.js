@@ -1,6 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import RecipesContext from '../context/RecipesContext';
+import SearchBarStyle from '../styles/SearchBarStyle';
 
 import requisition from '../utils/requisition';
 
@@ -85,9 +86,8 @@ function SearchBar() {
   };
 
   return (
-    <div>
+    <SearchBarStyle>
       <label htmlFor="ingredient">
-        Ingredient
         <input
           type="radio"
           name="btn-radio"
@@ -96,9 +96,9 @@ function SearchBar() {
           id={ data }
           onChange={ handleOnChange }
         />
+        Ingredient
       </label>
       <label htmlFor="name-search">
-        Name
         <input
           type="radio"
           name="btn-radio"
@@ -106,9 +106,9 @@ function SearchBar() {
           value="name-search"
           onChange={ handleOnChange }
         />
+        Name
       </label>
       <label htmlFor="first-letter">
-        First letter
         <input
           type="radio"
           name="btn-radio"
@@ -116,6 +116,7 @@ function SearchBar() {
           value="first-letter"
           onChange={ handleOnChange }
         />
+        First letter
       </label>
       <button
         type="button"
@@ -124,7 +125,7 @@ function SearchBar() {
       >
         Search
       </button>
-    </div>
+    </SearchBarStyle>
   );
 }
 
