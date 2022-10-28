@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import RecipesContext from '../context/RecipesContext';
 import shareIcon from '../images/shareIcon.svg';
-import SectionDoneRecipes from '../styles/DoneRecipes';
+import DoneRecipesStyle from '../styles/DoneRecipesStyle';
 
 const copy = require('clipboard-copy');
 
@@ -25,7 +25,7 @@ function DoneRecipes() {
   };
 
   return (
-    <SectionDoneRecipes>
+    <DoneRecipesStyle>
       { clipboard && <p>Link copied!</p>}
       <Header />
       <div className="filter-btn">
@@ -78,7 +78,7 @@ function DoneRecipes() {
                     }
                   </p>
                   <p data-testid={ `${index}-horizontal-done-date` }>
-                    { new Date(dr.doneDate).toLocaleDateString() }
+                    { dr.doneDate }
                   </p>
                   <div>
                     {
@@ -109,7 +109,7 @@ function DoneRecipes() {
             ))
         }
       </ul>
-    </SectionDoneRecipes>
+    </DoneRecipesStyle>
   );
 }
 
