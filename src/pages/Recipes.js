@@ -42,7 +42,7 @@ function Recipes({ name }) {
       <Header />
       {
         name === 'drinks' ? (
-          <div>
+          <div className="recipe-content">
             <div className="div-btn-filters">
               {
                 renderButtons(btnsDrinks, 'drink')
@@ -77,7 +77,7 @@ function Recipes({ name }) {
             </div>
           </div>
         ) : (
-          <div>
+          <div className="recipe-content">
             <div className="div-btn-filters">
               {
                 renderButtons(btnsMeals, 'meal')
