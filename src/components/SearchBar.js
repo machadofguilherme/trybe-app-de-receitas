@@ -1,5 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
+import { AiOutlineSearch } from 'react-icons/ai';
+
 import RecipesContext from '../context/RecipesContext';
 import SearchBarStyle from '../styles/SearchBarStyle';
 
@@ -118,13 +120,17 @@ function SearchBar() {
         />
         First letter
       </label>
-      <button
+      {/* <button
         type="button"
         data-testid="exec-search-btn"
         onClick={ handleOnClick }
-      >
-        Search
-      </button>
+      > */}
+      <AiOutlineSearch
+        className="search-icon"
+        data-testid="exec-search-btn"
+        onClick={ handleOnClick }
+      />
+      {/* </button> */}
     </SearchBarStyle>
   );
 }
