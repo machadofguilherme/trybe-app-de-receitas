@@ -1,13 +1,36 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+# [Trybe] - App de Receitas
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+Um aplicativo de receitas, capaz de fornecer ao usuário uma vasta quantidade e diversidade de receitas alimentícias, assim como, drinques dos lugares mais inóspitos do mundo. Você está preparado para cozinhar?
+
+Arregace as mangas! Esse projeto foi o último projeto do módulo de Front-End da Trybe. Ele também foi diferenciado, ao ponto que tivemos que apresentar o que fizemos ao final.
+
+Esse projeto foi desenvolvido em conjunto com os meus colegas: André Melo, Gustavo Aquino e Raziel Dias.
+## Informações adicionais
+
+- É possível visualizar e buscar por comidas e bebidas.
+- É possível filtrar comidas e bebidas.
+- É possível favoritar comidas e bebidas.
+
+E outros...
+
+
+## Execução
+
+1. Clone o projeto para o seu computador:
+
+```bash
+  git clone https://github.com/machadofguilherme/trybe-app-de-receitas.git
+  cd trybe-app-de-receitas
+```
+2. Instale as dependências:
+
+```bash
+  npm i
+```
+
+3. Inicie a aplicação:
+
+```bash
+  npm start
+```
